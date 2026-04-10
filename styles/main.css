@@ -111,6 +111,8 @@ div.attention {
 
     & p:first-of-type {
         background-color:purple;
+        color:var(--background-color);
+        font-weight:bold;
         margin:0;
         padding-bottom:0;
         padding-left:2vw;
