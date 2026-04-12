@@ -166,7 +166,28 @@ section.example {
     section:first-of-type {
         padding-top:20vh;
     }
-
-
 }
+
+
+figure { 
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    & img {
+        width:80%;
+    }
+
+    & figcaption {
+        width:70%;
+        font-size:smaller;
+        font-style:italic;
+    }
+}
+
+p.quote { font-style:italic; padding-left:5vw;}
+p.quote::before { content:open-quote; }
+p.quote::after { content:close-quote; }
+
 
