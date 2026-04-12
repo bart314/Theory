@@ -29,6 +29,14 @@ a { text-decoration:none; color:gray; }
 a:hover { text-decoration:underline; }
 td.number { text-align: right;}
 
+p.quote { font-style:italic; padding-left:5vw;}
+p.quote::before { content:open-quote; }
+p.quote::after { content:close-quote; }
+
+div.kaltura {
+    padding:0 2vw;
+    display:flex;
+}
 
 h1, h2 {
     font-family:publico,Georgia, 'Times New Roman', Times, serif;
@@ -140,6 +148,23 @@ section.example {
     & video, audio, img { width:100%; }
 }
 
+figure { 
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    & img {
+        width:80%;
+    }
+
+    & figcaption {
+        width:70%;
+        font-size:smaller;
+        font-style:italic;
+    }
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:#fafafa;
@@ -159,6 +184,8 @@ section.example {
         margin-bottom: 8vh;
     }
 
+    section.kaltura { text-align:center; }
+
     header > h2 { 
         font-size:3vw;
     }
@@ -167,27 +194,3 @@ section.example {
         padding-top:20vh;
     }
 }
-
-
-figure { 
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-    & img {
-        width:80%;
-    }
-
-    & figcaption {
-        width:70%;
-        font-size:smaller;
-        font-style:italic;
-    }
-}
-
-p.quote { font-style:italic; padding-left:5vw;}
-p.quote::before { content:open-quote; }
-p.quote::after { content:close-quote; }
-
-

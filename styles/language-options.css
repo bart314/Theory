@@ -1,0 +1,31 @@
+div.multiple {
+    margin:0 2vw;
+    border:solid gray 1px;
+
+    & div.choice {
+        background-color: gray;
+        display:flex;
+    }
+
+    & div.option {
+        padding:0 2vw;
+        cursor:pointer;
+    }
+
+    & div.active {
+        background-color:darkgray;
+    }
+
+    & div.quote {
+        font-style:italic;
+    }
+
+    & div.current {
+        display: block;
+    }
+
+    & div.hidden {
+        display: none;
+    }
+}
+
