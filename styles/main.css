@@ -85,6 +85,10 @@ header {
             padding:0;
         }
     }
+
+    & div.exercises {
+        justify-content:space-evenly;
+    }
 }
 
 footer {
@@ -191,6 +195,6 @@ figure {
     }
 
     section:first-of-type {
-        padding-top:20vh;
+        padding-top:22vh;
     }
 }
