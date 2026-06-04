@@ -163,9 +163,10 @@ figure {
     }
 
     & figcaption {
-        width:70%;
+        width:50%;
         font-size:smaller;
         font-style:italic;
+        text-align:center;
     }
 }
 
